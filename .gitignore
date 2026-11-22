@@ -1,0 +1,15 @@
+# Secrets, real data, screenshots, and backups stay on the device.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*secret*
+data/
+backups/
+screenshots/
+local/
+*.csv
+*.sqlite
+*.sqlite3
+*.db
