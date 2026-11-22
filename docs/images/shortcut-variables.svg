@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 947" width="540" height="947" role="img" aria-labelledby="title description" lang="zh-CN"><title id="title">快捷指令变量怎么接</title><desc id="description">第一次脚本 Parameter 是 OCR 文本；从输出获取词典并存为待确认结果，从中分别取 status、summary、message。ready 分支显示 summary，确认后创建包含 action 为 commit 和动态 token 的词典，第二次脚本 Parameter 接整个提交词典。图为接线示意。</desc><rect width="540" height="947" fill="#0d1718"/><path d="M16 30V16H30 M510 16H524V30 M16 917V931H30 M510 931H524V917" fill="none" stroke="#567362" stroke-width="2"/>
+<text x="30" y="43" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">启待账本  /  快捷指令</text>
+<text x="30" y="82" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="700">两个脚本动作怎样接？</text>
+<text x="30" y="112" fill="#81a498" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="400">变量接线示意 · 非系统截图</text>
+<rect x="30" y="137" width="480" height="115" rx="3" fill="#172727" stroke="#567362" stroke-width="1.4"/>
+<text x="48" y="165" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">01</text>
+<text x="86" y="167" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">第一次运行 AI 脚本</text>
+<text x="48" y="198" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">Parameter／参数：OCR 提取到的文本。</text>
+<text x="48" y="223" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">AI 脚本动作的 Run In App：关闭。</text>
+<path d="M270 255v20m-4 -5 4 5 4 -5" fill="none" stroke="#81a498" stroke-width="2"/>
+<rect x="30" y="281" width="480" height="115" rx="3" fill="#1c302b" stroke="#567362" stroke-width="1.4"/>
+<text x="48" y="309" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">02</text>
+<text x="86" y="311" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">保存整个返回结果</text>
+<text x="48" y="342" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">从第一次输出获取词典，用「设定变量」</text>
+<text x="48" y="367" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">把完整词典存到「待确认结果」。</text>
+<path d="M270 399v20m-4 -5 4 5 4 -5" fill="none" stroke="#81a498" stroke-width="2"/>
+<rect x="30" y="425" width="480" height="206" rx="3" fill="#172727" stroke="#567362" stroke-width="1.4"/>
+<text x="48" y="454" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">03</text>
+<text x="86" y="456" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">读取字段，仅用于判断和显示</text>
+<rect x="48" y="470" width="113" height="34" rx="3" fill="#12201e" stroke="#304343" stroke-width="1.4"/>
+<text x="59" y="493" fill="#a4f0bf" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">status</text>
+<text x="176" y="494" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">转为文本，判断是否为 ready</text>
+<rect x="48" y="513" width="113" height="34" rx="3" fill="#12201e" stroke="#304343" stroke-width="1.4"/>
+<text x="59" y="536" fill="#a4f0bf" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">summary</text>
+<text x="176" y="537" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">ready 时放进确认提醒</text>
+<rect x="48" y="556" width="113" height="34" rx="3" fill="#12201e" stroke="#304343" stroke-width="1.4"/>
+<text x="59" y="579" fill="#a4f0bf" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">message</text>
+<text x="176" y="580" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">不是 ready 时显示，随后停止</text>
+<text x="48" y="612" fill="#81a498" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="400">保留「待确认结果」原变量，不要用单字段覆盖。</text>
+<path d="M270 634v20m-4 -5 4 5 4 -5" fill="none" stroke="#81a498" stroke-width="2"/>
+<rect x="30" y="660" width="480" height="199" rx="3" fill="#1c302b" stroke="#567362" stroke-width="1.4"/>
+<text x="48" y="689" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">04</text>
+<text x="86" y="691" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">确认后组装提交词典</text>
+<rect x="48" y="709" width="444" height="59" rx="3" fill="#12201e" stroke="#304343" stroke-width="1.4"/>
+<text x="60" y="733" fill="#a4f0bf" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">action = commit</text>
+<text x="60" y="756" fill="#a4f0bf" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">token  =</text>
+<text x="159" y="756" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="600">从「待确认结果」获取 token</text>
+<text x="48" y="804" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="400">第二次运行同一 AI 脚本：参数选整个提交词典。</text>
+<text x="48" y="834" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="400">Run In App 仍关闭；把第二次输出转为词典。</text>
+<rect x="30" y="876" width="480" height="44" rx="3" fill="#473626" stroke="#9c794b" stroke-width="1.4"/>
+<text x="48" y="905" fill="#ffd397" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">不要把 summary、status 或单独 token 接到参数。</text>
+</svg>

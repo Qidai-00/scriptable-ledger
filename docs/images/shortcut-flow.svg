@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 871" width="540" height="871" role="img" aria-labelledby="title description" lang="zh-CN"><title id="title">iPhone 截图记账流程</title><desc id="description">先在 Scriptable 运行账本并配置 DeepSeek；快捷指令截图并提取文本。第一次脚本只识别，状态为 ready 才显示摘要。确认后把提交词典交回同一脚本；取消或非 ready 不入账。示意图，不是 iOS 截图。</desc><rect width="540" height="871" fill="#0d1718"/><path d="M16 30V16H30 M510 16H524V30 M16 841V855H30 M510 855H524V841" fill="none" stroke="#567362" stroke-width="2"/>
+<text x="30" y="43" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">启待账本  /  iPhone</text>
+<text x="30" y="82" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="700">截图记账怎么走？</text>
+<text x="30" y="112" fill="#81a498" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="400">流程示意 · 非系统截图</text>
+<rect x="30" y="137" width="480" height="111" rx="3" fill="#172727" stroke="#567362" stroke-width="1.4"/>
+<text x="48" y="165" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">00</text>
+<text x="86" y="167" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">首次设置</text>
+<text x="48" y="198" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">在 Scriptable 手动运行账本一次，登记通知入口。</text>
+<text x="48" y="223" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">再手动运行 AI 脚本，配置 DeepSeek API Key。</text>
+<path d="M270 251v20m-4 -5 4 5 4 -5" fill="none" stroke="#81a498" stroke-width="2"/>
+<rect x="30" y="278" width="480" height="85" rx="3" fill="#172727" stroke="#567362" stroke-width="1.4"/>
+<text x="48" y="306" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">01</text>
+<text x="86" y="308" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">截屏 → 从图像提取文本</text>
+<text x="48" y="339" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">只把提取到的文字交给 AI 脚本。</text>
+<path d="M270 366v20m-4 -5 4 5 4 -5" fill="none" stroke="#81a498" stroke-width="2"/>
+<rect x="30" y="393" width="480" height="85" rx="3" fill="#172727" stroke="#567362" stroke-width="1.4"/>
+<text x="48" y="421" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">02</text>
+<text x="86" y="423" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">第一次运行 AI 脚本：识别</text>
+<text x="48" y="454" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">读取返回结果的 status；此时尚未入账。</text>
+<path d="M270 481v20m-4 -5 4 5 4 -5" fill="none" stroke="#81a498" stroke-width="2"/>
+<rect x="30" y="508" width="480" height="111" rx="3" fill="#1c302b" stroke="#567362" stroke-width="1.4"/>
+<text x="48" y="536" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">03</text>
+<text x="86" y="538" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">仅 status = ready：显示提醒</text>
+<text x="48" y="569" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">提醒显示 summary，并开启「显示取消按钮」。</text>
+<text x="48" y="594" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">其他状态显示 message 后停止，不提交。</text>
+<path d="M270 620v13H145v11m125-11H395v11" fill="none" stroke="#81a498" stroke-width="2"/>
+<path d="M141 640l4 4 4-4" fill="none" stroke="#81a498" stroke-width="2"/>
+<path d="M391 640l4 4 4-4" fill="none" stroke="#81a498" stroke-width="2"/>
+<rect x="30" y="653" width="230" height="131" rx="3" fill="#1c302b" stroke="#567362" stroke-width="1.4"/>
+<text x="47" y="681" fill="#a4f0bf" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">确认</text>
+<text x="47" y="715" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700">第二次运行 AI 脚本</text>
+<text x="47" y="742" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="400">参数：提交词典</text>
+<text x="47" y="767" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="400">saved 表示账单已保存</text>
+<rect x="280" y="653" width="230" height="131" rx="3" fill="#473626" stroke="#9c794b" stroke-width="1.4"/>
+<text x="297" y="681" fill="#ffd397" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">取消</text>
+<text x="297" y="715" fill="#f1f8f4" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700">快捷指令到此停止</text>
+<text x="297" y="742" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="400">不执行第二次脚本</text>
+<text x="297" y="767" fill="#c5d7d1" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="400">不会写入账本</text>
+<text x="30" y="827" fill="#81a498" font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400">确认提醒与真正入账，是两个分开的步骤。</text>
+</svg>
